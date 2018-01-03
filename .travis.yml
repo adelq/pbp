@@ -4,9 +4,9 @@ python:
   - "2.7"
 
 install:
- - sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ vivid universe multiverse"
+ - sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ artful universe multiverse"
  - sudo apt-get update -qq
- - sudo apt-get install -y libsodium13 python-setuptools
+ - sudo apt-get install -y libsodium18 python-setuptools
  - python setup.py develop --always-unzip
 
 script:
